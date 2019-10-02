@@ -1,5 +1,8 @@
 .navigation {
+  position: fixed;
+  top: 0;
   width: 100vw;
+  margin-top: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -7,28 +10,7 @@
   
 }
 
-.navLinks {
-  max-width: 50vw;
-  display: flex;
-  flex-grow: 1;
-  flex-direction: row;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  margin-right: 5%;
-}
-
-.link {
-  font-size: 1rem;
-  margin: auto;
-  justify-content: center;
-}
-
-.link a {
-  text-decoration: none;
-  color: #fff;
-}
-
 .logo{
-  margin-left: 5%;
-  font-size: 1.5rem;
+  margin-left: 3%;
+  font-size: 1.2rem;
 }

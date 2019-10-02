@@ -1,0 +1,24 @@
+.heroContent {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contentText {
+  border: 1px solid white;
+  width: 40vw;
+  height: 70vh;
+  min-width: 320px;
+  min-height: 200px;
+}
+
+.gifWithFace {
+  border: 1px solid white;
+  width: 40vw;
+  height: 70vh;
+  min-width: 320px;
+  min-height: 200px;
+}

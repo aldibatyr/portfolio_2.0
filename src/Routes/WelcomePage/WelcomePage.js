@@ -5,7 +5,7 @@ import './WelcomePage.css';
 export default class WelcomePage extends React.Component {
 
   state = {
-    words: ['vision', 'showcase', 'world', 'lifestyle', 'self']
+    words: ['portfolio', 'vision', 'showcase', 'world', 'lifestyle', 'self']
   }
   takeToMain = () => {
     this.props.history.push('/showcase')
