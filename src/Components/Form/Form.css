@@ -1,0 +1,120 @@
+.formExample {
+  padding: 5% 10%;
+  width: 80%;
+  height: 100%;
+  display: block;
+  font-family: 'Krona One', sans-serif;
+  transition: 0.5s
+}
+
+#goGreen {
+  background: green;
+}
+
+.formSection {
+  display: flex;
+  justify-items: space-evenly;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.label {
+  padding-left: 10px;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+}
+
+.input {
+  width: 90%;
+  margin: auto;
+  height: 36px;
+  padding-left: 10px;
+  font-size: 14px;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 5px;
+  background: none;
+  transition: 0.3s;
+}
+
+.input:hover {
+  background: #fff;
+  color: #000;
+}
+
+.input:focus {
+  background: #fff;
+  color: #000;
+}
+
+.shake {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  border: 1px solid red;
+}
+
+.formActions {
+  text-align: center;
+}
+
+.button {
+  font-family: 'Krona One', sans-serif;
+  margin-top: 21px;
+  width: 90%;
+  height: 36px;
+  border-radius: 5px;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #000;
+}
+
+.button:focus {
+  cursor: pointer;
+  background: #fff;
+  color: #000;
+}
+
+.buttonDisabled {
+  font-family: 'Krona One', sans-serif;
+  margin-top: 21px;
+  width: 90%;
+  height: 36px;
+  border-radius: 5px;
+  background: grey;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.error {
+  text-align: center;  
+  font-family: 'Roboto', sans-serif;
+  color: red;
+  margin: 0 5%;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+

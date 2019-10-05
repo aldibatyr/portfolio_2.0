@@ -1,4 +1,62 @@
-.about {
+@import url('https://fonts.googleapis.com/css?family=Krona+One&display=swap');
+
+.aboutContent {
   height: 100vh;
   width: 100vw;
+  max-height: 100%;
+  max-width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
+
+.aboutContentText {
+  max-width: 40vw;
+  max-height: 50vh;
+  min-width: 310px;
+  min-height: 200px;
+  margin-right: 5%;
+}
+
+.pagePrettier {
+  border: 2px solid white;
+  max-width: 450px;
+  max-height: 450px;
+  width: 40vw;
+  height: 50vh;
+  min-width: 310px;
+  min-height: 200px;
+}
+
+.aboutTitle {
+  font-family: 'Krona One', sans-serif;
+  font-size: 2em;
+  text-align: right;
+}
+
+.aboutTitle>h1 {
+  margin-top: 0;
+}
+
+.aboutDescription {
+  font-size: 1.2em;
+}
+
+.heartEmoji {
+  z-index: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutContent {
+    height: 100%;
+  }
+
+  .aboutContentText {
+    max-width: 40vw;
+    max-height: 100%;
+    min-width: 290px;
+    min-height: 200px;
+  }
+}
+

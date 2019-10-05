@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Krona+One&display=swap');
+
 .heroContent {
   width: 100vw;
   height: 100vh;
+  max-height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -8,17 +11,31 @@
 }
 
 .contentText {
-  border: 1px solid white;
-  width: 40vw;
-  height: 70vh;
-  min-width: 320px;
+  max-width: 40vw;
+  max-height: 50vh;
+  min-width: 310px;
   min-height: 200px;
 }
 
 .gifWithFace {
-  border: 1px solid white;
+  border: 2px solid white;
+  max-width: 450px;
+  max-height: 450px;
   width: 40vw;
-  height: 70vh;
-  min-width: 320px;
+  height: 50vh;
+  min-width: 310px;
   min-height: 200px;
+}
+
+.heroTitle {
+  font-family: 'Krona One', sans-serif;
+  font-size: 2em;
+}
+
+.heroDescription {
+  font-size: 1.2em;
+}
+
+.heroDescription span {
+  text-align: center;
 }

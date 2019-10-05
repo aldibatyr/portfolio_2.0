@@ -15,7 +15,7 @@
   text-align: center;
   height: 50vh;
   width: 100vw;
-  font-size: 2vw;
+  font-size: 1.2em;
 }
 
 .actionButton-wrapper {
@@ -29,14 +29,14 @@
 
 .actionButton {
   min-width: 15%;
-  width: 7vw;
+  width: 140px;
   min-height: 15%;
   margin: auto;
   background: none;
   color: #fff;
   border-radius: 15px;
   border: 2px solid #fff;
-  font-size: 2vw;
+  font-size: 1.2em;
   transition: 0.3s;
   font-family: 'Mansalva', cursive;
 }

@@ -14,7 +14,7 @@ export default class WelcomePage extends React.Component {
     return (
       <div className="welcome">
         <div className="title slide-in-left">
-          <h1>Hello, welcome to my</h1>
+          <h1>Welcome to my</h1>
           <h1><ReactRotatingText items={this.state.words}/></h1>
         </div>
         <div className="actionButton-wrapper">
