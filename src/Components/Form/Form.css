@@ -7,6 +7,17 @@
   transition: 0.5s
 }
 
+.successLogin {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: 'Krona One', sans-serif;
+  transition: 0.5s
+}
+
 #goGreen {
   background: green;
 }
@@ -56,6 +67,30 @@
   text-align: center;
 }
 
+.goBackButton {
+  font-family: 'Krona One', sans-serif;
+  width: 90%;
+  height: 36px;
+  border-radius: 5px;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.goBackButton:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #000;
+}
+
+.goBackButton:focus {
+  cursor: pointer;
+  background: #fff;
+  color: #000;
+}
+
+
 .button {
   font-family: 'Krona One', sans-serif;
   margin-top: 21px;
@@ -99,6 +134,39 @@
   margin: 0 5%;
 }
 
+.my-node-enter {
+  transform: scale(0.5);
+}
+.my-node-enter-active {
+  transform: scale(1);
+  transition: transform 800ms;
+}
+.my-node-exit {
+  transform: scale(1);
+}
+.my-node-exit-active {
+  transform: scale(0.5);
+  transition: transform 800ms;
+}
+
+.back-enter {
+  transform: scale(0.5);
+}
+
+.back-enter-active {
+  transform: scale(1);
+  transition: transform 800ms;
+}
+
+.back-exit-active {
+  transform: scale(1);
+}
+
+.back-exit-active {
+  transform: scale(0.5);
+  transition: transform 800ms;
+}
+
 @keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
@@ -114,6 +182,12 @@
 
   40%, 60% {
     transform: translate3d(4px, 0, 0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skillsText {
+    margin-bottom: 30px;
   }
 }
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import './Form.css';
+import {TransitionGroup, CSSTransition} from 'react-transition-group';
 
 export default class Form extends React.Component {
 
@@ -84,6 +85,11 @@ export default class Form extends React.Component {
     }
   }
 
+  goBackClick = () => {
+    this.setState({
+      loginSuccess: false
+    })
+  }
 
   handleSubmit = (e) => {
     e.preventDefault();
@@ -98,29 +104,47 @@ export default class Form extends React.Component {
   render() {
     const isEnabled = this.state.password.length > 0 && this.state.username.length > 0
     return (
-      <div className={(this.state.loginSuccess) ? 'successLogin' : 'formContainer'}>
-        <form onSubmit={(e) => this.handleSubmit(e)} className='formExample'>
-          <div className='formSection'>
-            <label className='label' htmlFor='username'>
-              Type `John` to login
-            </label>
-            <input onChange={(e) => this.setUsername(e)} className={(this.state.animateUsernameInput) ? 'input shake' : 'input'} type='text' id='username' name='username' placeholder='Username' value={this.state.username} required/>
+      <TransitionGroup component={null}>
+      {(this.state.loginSuccess) ? 
+        <CSSTransition
+          timeout={800}
+          classNames='my-node'
+        >
+          <div className='successLogin'>
+            <h1>You made it! <span role='img' aria-label='accessible-emoji'>🥳🎉🎉</span></h1>
+            <button onClick={this.goBackClick} className='goBackButton' type='submit'>Go back</button>
           </div>
-          <div className='formSection'>
-            <label className='label' htmlFor='password'>
-              Type `AAssDD` to login
-            </label>
-            <input onChange={(e) => this.setPassword(e)} className={(this.state.animatePasswordInput) ? 'input shake' : 'input'} type='password' id='password' name='password' placeholder='Password' value={this.state.password} required/>
+        </CSSTransition>
+        :
+        // <CSSTransition
+        //   timeout={800}
+        //   classNames='back'
+        // >
+          <div className='formContainer'>
+            <form onSubmit={(e) => this.handleSubmit(e)} className='formExample'>
+              <div className='formSection'>
+                <label className='label' htmlFor='username'>
+                  Type `John` to login
+                </label>
+                <input onChange={(e) => this.setUsername(e)} className={(this.state.animateUsernameInput) ? 'input shake' : 'input'} type='text' id='username' name='username' placeholder='Username' value={this.state.username} required/>
+              </div>
+              <div className='formSection'>
+                <label className='label' htmlFor='password'>
+                  Type `AAssDD` to login
+                </label>
+                <input onChange={(e) => this.setPassword(e)} className={(this.state.animatePasswordInput) ? 'input shake' : 'input'} type='password' id='password' name='password' placeholder='Password' value={this.state.password} required/>
+              </div>
+              <div className='formActions'>
+                <button className={(!isEnabled) ? 'buttonDisabled' : 'button'} type='submit' disabled={!isEnabled}>Submit</button>
+              </div>
+              <div className='error'>
+                {(this.state.error) ? <p>{this.state.error}</p> : <></>}
+              </div>
+            </form>
           </div>
-          <div className='formActions'>
-            <button className={(!isEnabled) ? 'buttonDisabled' : 'button'} type='submit' disabled={!isEnabled}>Submit</button>
-          </div>
-          <div className='error'>
-            {(this.state.error) ? <p>{this.state.error}</p> : <></>}
-          </div>
-        </form>
-      </div>
-
+        // </CSSTransition>
+        }
+      </TransitionGroup>
     )
   }
 }

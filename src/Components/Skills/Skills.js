@@ -31,12 +31,18 @@ const Skills = () => {
               <p>
                 I can animate the layout and conditionally render elements.
               </p>
+              <p>
+                Type in suggested inputs to see successful login, or type anything else to see an error.
+              </p>
+              <p>
+                Go ahead, try it out <span>☺</span>
+              </p>
             </div>
           </ScrollAnimation>
         
           </div>
         </ScrollAnimation>
-        <div className='pagePrettier'>
+        <div className='formContainer'>
           <Form/>
         </div>
       </div>

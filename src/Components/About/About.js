@@ -28,7 +28,7 @@ const About = () => {
           delay='200'
           >
             <p>
-              I am a front end web developer currently residing in Los Angeles, CA.
+              For the past 8 years I have lived in Los Angeles, CA.
             </p>
           </ScrollAnimation>
           <ScrollAnimation
@@ -38,7 +38,7 @@ const About = () => {
           delay='300'
           >
             <p>
-              I am from Almaty, Kazakhstan <span role="img" aria-label="emoji" className="heartEmoji"> ❤️ </span>
+              Originally, I am from Almaty, Kazakhstan <span role="img" aria-label="emoji" className="heartEmoji"> ❤️ </span>
             </p>
           </ScrollAnimation>
           <ScrollAnimation
@@ -48,7 +48,7 @@ const About = () => {
           delay='400'
           >
             <p>
-              I specialize in React, Node, and PostgreSQL. 
+              I love front end development, promoting my vision, and creating styles.
             </p>
           </ScrollAnimation>
           <ScrollAnimation
@@ -58,7 +58,7 @@ const About = () => {
           delay='500'
           >
             <p>
-              I love technology, innovations, and everything stylish.
+              I love new technology, fast cars, and quality time with friends.
             </p>
           </ScrollAnimation>
           <ScrollAnimation
@@ -68,7 +68,8 @@ const About = () => {
           delay='700'
           >
             <p>
-              I love designing user interfaces. My daily routine consists of consuming information about technology and design, then applying the concepts in code.
+              But most of all, I love designing user interfaces. <br/> 
+              My daily routine consists of consuming information about technology and design, then applying the concepts in code.
             </p>
           </ScrollAnimation>
           </div>

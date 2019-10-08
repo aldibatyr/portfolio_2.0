@@ -23,11 +23,14 @@ const Hero = () => {
               delay='150'
             >
               <div className="heroDescription">
+                <h3>I am Aldiyar.</h3>
+                <h4>I am a web developer.</h4>
+                <p>I specialize in React, Node, Layouts, CSS animations, and currently exploring Lottie animations.</p>
                 <p>
-                  This is me. My thought process. My abilities, and what I enjoy doing.
+                  This is me. My thought process. My skills, my projects, and what I enjoy doing.
                 </p>
                 <span>
-                  Scroll down to know more about me.
+                  Scroll down to know more about me. Cheers <span role="img" aria-label='accessible-emoji'>🎉</span>
                 </span>
               </div>            
               </ScrollAnimation>
