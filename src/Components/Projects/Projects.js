@@ -13,7 +13,6 @@ const Projects = () => {
             animateIn='slideInRight'
             animateOut='slideOutRight'
             duration='1.5'
-            offset="702"
           >
             <div className="projectsTitle">
               <h1>Projects</h1>
