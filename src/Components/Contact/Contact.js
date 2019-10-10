@@ -20,9 +20,11 @@ const Contact = () => {
               animateOut='slideOutLeft'
             >
               <div className='contactMainText'>
-                <p>
-                  Lets work together!<br/>
-                </p>
+                <h3>
+                  <span className='contrastingText'>
+                    Lets work together!
+                  </span>
+                </h3>
                 <p>
                   You can contact me using buttons here.
                   I am waiting for you!

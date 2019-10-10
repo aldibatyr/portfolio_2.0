@@ -10,7 +10,6 @@ const Hero = () => {
         <ScrollAnimation
           animateIn='slideInLeft'
           animateOut='slideOutLeft'
-          duration='1.5'
         >
           <div className="contentText">
             <div className="heroTitle">
@@ -19,15 +18,16 @@ const Hero = () => {
             <ScrollAnimation
               animateIn='slideInLeft'
               animateOut='slideOutLeft'
-              duration='1.5'
-              delay='150'
             >
               <div className="heroDescription">
                 <h3>I am Aldiyar.</h3>
-                <h4>I am a web developer.</h4>
-                <p>I specialize in React, Node, Layouts, CSS animations, and currently exploring Lottie animations.</p>
+                <h4>I am a <span className='contrastingText'>web developer</span> and a <span className='contrastingText'>team player</span>.</h4>
+                <p>I specialize in <span className='contrastingText'>React, Node, Layouts, CSS animations,</span> and currently exploring Lottie animations.</p>
                 <p>
                   This is me. My thought process. My skills, my projects, and what I enjoy doing.
+                </p>
+                <p>
+                  I am also fluent in 3 spoken languages: <span className='contrastingText'>Kazakh</span>, <span className='contrastingText'>Russian</span>, and <span className='contrastingText'>English</span>
                 </p>
                 <span>
                   Scroll down to know more about me. Cheers <span role="img" aria-label='accessible-emoji'>🎉</span>

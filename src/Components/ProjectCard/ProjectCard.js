@@ -16,7 +16,7 @@ export default class ProjectCard extends React.Component {
   }
 
   render() {
-    const techList = this.props.technology.map(tech => <span>{tech}</span>)
+    const techList = this.props.technology.map((tech, i) => <span key={i}>{tech}</span>)
     return (
       <div className="projectCard">
         <div className='projectImage' onClick={this.handleExpand}>

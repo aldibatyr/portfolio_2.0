@@ -14,7 +14,6 @@ const About = () => {
           <ScrollAnimation
             animateIn='slideInRight'
             animateOut='slideOutRight'
-            duration='1.5'
           >
             <div className="aboutTitle">
               <h1>About</h1>
@@ -24,8 +23,6 @@ const About = () => {
           <ScrollAnimation
           animateIn='slideInRight'
           animateOut='slideOutRight'
-          duration='1.5'
-          delay='200'
           >
             <p>
               For the past 8 years I have lived in Los Angeles, CA.
@@ -34,8 +31,6 @@ const About = () => {
           <ScrollAnimation
           animateIn='slideInRight'
           animateOut='slideOutRight'
-          duration='1.5'
-          delay='300'
           >
             <p>
               Originally, I am from Almaty, Kazakhstan <span role="img" aria-label="emoji" className="heartEmoji"> ❤️ </span>
@@ -44,8 +39,6 @@ const About = () => {
           <ScrollAnimation
           animateIn='slideInRight'
           animateOut='slideOutRight'
-          duration='1.5'
-          delay='400'
           >
             <p>
               I love front end development, promoting my vision, and creating styles.
@@ -54,8 +47,6 @@ const About = () => {
           <ScrollAnimation
           animateIn='slideInRight'
           animateOut='slideOutRight'
-          duration='1.5'
-          delay='500'
           >
             <p>
               I love new technology, fast cars, and quality time with friends.
@@ -64,8 +55,6 @@ const About = () => {
           <ScrollAnimation
           animateIn='slideInRight'
           animateOut='slideOutRight'
-          duration='1.5'
-          delay='700'
           >
             <p>
               But most of all, I love designing user interfaces. <br/> 

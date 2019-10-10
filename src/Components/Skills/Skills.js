@@ -12,7 +12,6 @@ const Skills = () => {
         <ScrollAnimation
           animateIn='slideInLeft'
           animateOut='slideOutLeft'
-          duration='1.5'
         >
           <div className="skillsText">
             <div className='skillsTitle'>
@@ -21,8 +20,6 @@ const Skills = () => {
             <ScrollAnimation
                 animateIn='slideInLeft'
                 animateOut='slideOutLeft'
-                duration='1.5'
-                delay='150'
               >
             <div className='skillsDescription'>
               <p>

@@ -11,7 +11,6 @@ const Projects = () => {
         <div className="projectsContentText">
           <ScrollAnimation
             animateIn='slideInRight'
-            duration='1.5'
           >
             <div className="projectsTitle">
               <h1>Projects</h1>
@@ -20,8 +19,6 @@ const Projects = () => {
           <ScrollAnimation
             animateIn='slideInRight'
             animateOut='slideOutRight'
-            duration='1.5'
-            delay='150'
           >
             <div className="projectsDescription">
               <p>Here are the projects that I have worked on so far.</p>
