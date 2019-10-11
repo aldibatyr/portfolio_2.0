@@ -8,23 +8,31 @@ import MainContent from './Routes/MainContent/MainContent';
 function App({location}) {
   return (
     <div className="App">
-      <TransitionGroup>
-        <Transition
-          key={location.key}
-          timeout={{enter: 750, exit: 150}}
-        >
-          <Switch location={location}>
-            <Route
-              exact path={'/'}
-              component={WelcomePage}
-            />
-            <Route
-              path={'/showcase'}
-              component={MainContent}
-            />
-          </Switch>
-        </Transition>
-      </TransitionGroup>
+      <Route render={({location}) => {
+        const {pathname, key} = location
+        return (
+          <TransitionGroup component={null}>
+            <Transition
+              key={key}
+              appear={true}
+              // onEnter={(node, appears) => AnimationPlaybackEvent(pathname, node, appears)}
+              timeout={{enter: 750, exit: 150}}
+            >
+              <Switch location={location}>
+                <Route
+                  exact path={'/'}
+                  component={WelcomePage}
+                />
+                <Route
+                  path={'/showcase'}
+                  component={MainContent}
+                />
+              </Switch>
+            </Transition>
+          </TransitionGroup>
+        )
+      }}/>
+
     </div>
   );
 }
