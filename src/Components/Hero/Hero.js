@@ -1,5 +1,6 @@
 import React from 'react'
 import './Hero.css';
+import heroGif from '../../Assets/heroGif.gif';
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
 
@@ -37,7 +38,7 @@ const Hero = () => {
             </div>  
         </ScrollAnimation>
         <div className="gifWithFace">
-          Placeholder For GIF
+          <img src={heroGif} alt='heroGif'/>
         </div>
       </div>
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import './Contact.css';
+import contactPhoto from '../../Assets/contactPhoto.jpg';
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
 
@@ -37,7 +38,7 @@ const Contact = () => {
           </div>
         </ScrollAnimation>
         <div className='contactImage'>
-          Placeholder for picture
+          <img src={contactPhoto} alt='Aldiyar-Batyrbekov'/>
         </div>
         <div className='contactLinks'>
           <a href="https://linkedin.com/in/aldibatyr" rel="noopener noreferrer" target="_blank"><button className='button social'>LinkedIn</button></a>

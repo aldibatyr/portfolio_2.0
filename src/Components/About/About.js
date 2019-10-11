@@ -1,5 +1,6 @@
 import React from 'react'
 import './About.css';
+import aboutGif from '../../Assets/aboutGif.gif';
 import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css/animate.min.css';
 
@@ -8,7 +9,7 @@ const About = () => {
     <section id="about" className="about">
       <div className="aboutContent">
         <div className="pagePrettier">
-
+          <img src={aboutGif} alt='aboutGif'/>
         </div>
         <div className="aboutContentText">
           <ScrollAnimation
