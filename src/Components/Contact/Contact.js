@@ -23,7 +23,7 @@ const Contact = () => {
               <div className='contactMainText'>
                 <h3>
                   <span className='contrastingText'>
-                    Lets work together!
+                    Let's work together!
                   </span>
                 </h3>
                 <p>
