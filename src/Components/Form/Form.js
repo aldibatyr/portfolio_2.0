@@ -15,8 +15,8 @@ export default class Form extends React.Component {
       passwordValid: false,
       animatePasswordInput: false,
       buttonDisabled: true,
-      validLoginUsername: 'John',
-      validLoginPassword: 'AAssDD',
+      validLoginUsername: 'Alice',
+      validLoginPassword: 'Wonderland!2',
       loginSuccess: null
     }
   }
@@ -25,7 +25,7 @@ export default class Form extends React.Component {
     this.setState({
       animateUsernameInput: false
     })
-    if (e.target.value === 'John') {
+    if (e.target.value.toLowerCase() === 'alice') {
       this.setState({
         username: e.target.value,
         usernameValid: true
@@ -43,7 +43,7 @@ export default class Form extends React.Component {
     this.setState({
       animatePasswordInput: false
     })
-    if (e.target.value === 'AAssDD') {
+    if (e.target.value === 'Wonderland!2') {
       this.setState({
         password: e.target.value,
         passwordValid: true
@@ -124,13 +124,13 @@ export default class Form extends React.Component {
             <form onSubmit={(e) => this.handleSubmit(e)} className='formExample'>
               <div className='formSection'>
                 <label className='label' htmlFor='username'>
-                  Type `John` to login
+                  Type `Alice` to login
                 </label>
                 <input onChange={(e) => this.setUsername(e)} className={(this.state.animateUsernameInput) ? 'input shake' : 'input'} type='text' id='username' name='username' placeholder='Username' value={this.state.username} required/>
               </div>
               <div className='formSection'>
                 <label className='label' htmlFor='password'>
-                  Type `AAssDD` to login
+                  Type `Wonderland!2` to login
                 </label>
                 <input onChange={(e) => this.setPassword(e)} className={(this.state.animatePasswordInput) ? 'input shake' : 'input'} type='password' id='password' name='password' placeholder='Password' value={this.state.password} required/>
               </div>
