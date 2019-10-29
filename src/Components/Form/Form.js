@@ -36,7 +36,6 @@ export default class Form extends React.Component {
         usernameValid: false,
       })
     }
-    console.log(this.state.usernameValid)
   }
 
   setPassword = (e) => {
@@ -98,7 +97,6 @@ export default class Form extends React.Component {
       username: '',
       password: ''
     })
-    console.log(this.state)
   }
 
   render() {

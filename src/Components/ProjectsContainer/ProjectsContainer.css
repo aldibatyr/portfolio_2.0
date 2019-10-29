@@ -6,3 +6,7 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+
+.cardWrapper {
+  width: 50%;
+}

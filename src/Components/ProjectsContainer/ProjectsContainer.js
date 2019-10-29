@@ -1,13 +1,14 @@
-import React from 'react'
+import React from 'react';
 import './ProjectsContainer.css';
 import ProjectCard from '../ProjectCard/ProjectCard';
 import jobreel from '../../Assets/jobreel.png';
 import spacedrep from '../../Assets/spacedrep.png';
 import vkuss from '../../Assets/vkuss.png';
+import waitline from '../../Assets/waitline.png';
 
 export default class ProjectsContainer extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       projects: [
         {
@@ -19,12 +20,30 @@ export default class ProjectsContainer extends React.Component {
             'React',
             'Node',
             'PostgreSQL',
+            'Express',
             'Vanilla CSS3',
             'Responsive Design'
           ],
           demo: 'https://jobreel.now.sh',
           front: 'https://github.com/thinkful-ei-dragonfly/JobReel-client',
           back: 'https://github.com/thinkful-ei-dragonfly/JobReel-server',
+        },
+        {
+          title: 'WaitLine',
+          imageSource: waitline,
+          imageAlt: 'waitline demo image',
+          projectDescription: 'An app that was developed to help businesses keep track the line at the restaurant/bar/lounge',
+          technology: [
+            'React',
+            'Node',
+            'Express',
+            'PostgreSQL',
+            'Material UI',
+          ],
+          demo: 'https://waitline.now.sh',
+          front: 'https://github.com/aldibatyr/waitline',
+          back: 'https://github.com/aldibatyr/waitline-server',
+
         },
         {
           title: 'Spaced Repetition',
@@ -34,6 +53,7 @@ export default class ProjectsContainer extends React.Component {
           technology: [
             'React',
             'Node',
+            'Express',
             'PostgreSQL',
             'Vanilla CSS3',
             'Responsive Design'
@@ -50,6 +70,7 @@ export default class ProjectsContainer extends React.Component {
           technology: [
             'React',
             'Node',
+            'Express',
             'PostgreSQL',
             'Vanilla CSS3',
           ],
@@ -62,7 +83,9 @@ export default class ProjectsContainer extends React.Component {
   }
   render() {
     const projects = this.state.projects.map((project, i) => 
-      <ProjectCard key={i} title={project.title} imageSource={project.imageSource} imageAlt={project.imageAlt} projectDescription={project.projectDescription} technology={project.technology} demo={project.demo} front={project.front} back={project.back} dateCreated={this.state.dateCreated}/>
+      <div className='cardWrapper' key={i}>
+        <ProjectCard title={project.title} imageSource={project.imageSource} imageAlt={project.imageAlt} projectDescription={project.projectDescription} technology={project.technology} demo={project.demo} front={project.front} back={project.back} dateCreated={this.state.dateCreated}/>
+      </div>  
     )
     return (
       <div className='projectsContainer'>

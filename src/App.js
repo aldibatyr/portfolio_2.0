@@ -9,7 +9,7 @@ function App({location}) {
   return (
     <div className="App">
       <Route render={({location}) => {
-        const {pathname, key} = location
+        const {key} = location
         return (
           <TransitionGroup component={null}>
             <Transition
